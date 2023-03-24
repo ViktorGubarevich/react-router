@@ -1,13 +1,12 @@
-import { Fragment } from 'react';
-import Header from './Header';
-import styles from './Layout.module.css';
+import Header from "./Header";
+import styles from "./Layout.module.css";
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
-    <Fragment>
+    <>
       <Header />
-      <main className={styles.main}>{props.children}</main>
-    </Fragment>
+      <main className={styles.main}>{children}</main>
+    </>
   );
 };
 
